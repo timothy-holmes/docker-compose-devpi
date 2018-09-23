@@ -3,6 +3,7 @@
 0.5 (2018-09-23)
 ----------------
 
+- Upgrade versions to `devpi-client==4.1.0, devpi-common==3.3.1, devpi-server==4.7.1, devpi-web==3.4.1`
 - Make `/run.sh` and `logger_cfg.json` readonly to user
 
 
