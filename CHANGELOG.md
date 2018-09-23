@@ -1,5 +1,11 @@
 # CHANGELOG
 
+0.5 (2018-09-23)
+----------------
+
+- Make `/run.sh` and `logger_cfg.json` readonly to user
+
+
 0.4 (2017-06-27)
 ----------------
 

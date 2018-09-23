@@ -7,7 +7,9 @@ ENV DEVPI_SERVERDIR=/mnt/server \
 COPY ["requirements.txt", "logger_cfg.json", "run.sh", "/"]
 
 RUN pip install --no-cache-dir -r /requirements.txt && \
-    rm /requirements.txt
+    rm /requirements.txt && \
+    chmod 0555 /run.sh /logger_cfg.json
+
 
 VOLUME /mnt
 EXPOSE 3141
