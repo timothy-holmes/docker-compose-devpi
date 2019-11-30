@@ -1,8 +1,9 @@
 # CHANGELOG
 
-0.6 (Unreleased)
+0.6 (2019-11-30)
 ----------------
 
+- Add docker healthcheck.
 - Switch to `python:3-slim` image.
 - Upgrade versions to:
   - `devpi-client==5.1.0`
