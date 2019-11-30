@@ -1,12 +1,15 @@
-FROM python:3.7-slim
+FROM python:3-alpine
 
 ENV DEVPI_SERVERDIR=/mnt/server \
     DEVPI_CLIENTDIR=/mnt/client \
-    DEVPI_MIRROR_CACHE_EXPIRY=86400
+    DEVPI_MIRROR_CACHE_EXPIRY=86400 \
+    BUILD_DEPS="musl-dev gcc libffi-dev"
 
 COPY ["requirements.txt", "logger_cfg.json", "run.sh", "/"]
 
-RUN pip install --no-cache-dir -r /requirements.txt && \
+RUN apk add --no-cache ${BUILD_DEPS} && \
+    pip install --no-cache-dir -r /requirements.txt && \
+    apk del ${BUILD_DEPS} && \
     rm /requirements.txt && \
     chmod 0555 /run.sh /logger_cfg.json
 

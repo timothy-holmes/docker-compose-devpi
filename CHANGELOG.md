@@ -3,6 +3,7 @@
 0.6 (Unreleased)
 ----------------
 
+- Switch to `python:3-slim` image.
 - Upgrade versions to:
   - `devpi-client==5.1.0`
   - `devpi-server==5.2.0`
