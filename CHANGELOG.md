@@ -1,5 +1,14 @@
 # CHANGELOG
 
+0.6 (Unreleased)
+----------------
+
+- Upgrade versions to:
+  - `devpi-client==5.1.0`
+  - `devpi-server==5.2.0`
+  - `devpi-common==3.4.0`
+  - `devpi-web==4.0.0`
+
 0.5 (2018-09-23)
 ----------------
 
